@@ -36,6 +36,7 @@ const createStudent = async (req, res) => {
       medium_of_last_School:data.medium_of_last_School,
       bus_facility:data.bus_facility
     })
+    
     const savedData = await insertStuData.save()
     res.send({ 'status': 200, 'data': savedData })
 

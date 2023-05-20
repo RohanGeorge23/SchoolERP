@@ -1,7 +1,10 @@
 const express = require('express')
 const cors = require('cors')
 const {testDbConnection} =require('./config/db')
+require('./model/schoolDetail')
 require('./model/studentModel')
+
+const school = require('./routes/school')
 const stu = require('./routes/student')
 const app = express()
 
@@ -17,9 +20,10 @@ testDbConnection()
 
 
 app.get('/',(req,res)=>{
-  res.send('You Lit Bruhh')
+  res.send('Health Check : Working : 200')
 })
 // Custom Routes
+app.use('/school',school)
 app.use('/student',stu)
 
 
