@@ -10,7 +10,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'primereact/resources/themes/lara-light-indigo/theme.css';
 //PRIMEcore
 import 'primereact/resources/primereact.min.css';
-import RG from './components/RG';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -18,7 +17,6 @@ root.render(
   <BrowserRouter>
     <Routes>    
       <Route path="/" element={<App />} />
-      <Route path="/rg" element={<RG />} />
 
     </Routes>
   </BrowserRouter>
