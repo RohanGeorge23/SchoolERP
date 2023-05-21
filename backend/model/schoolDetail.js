@@ -9,7 +9,7 @@ const schoolSchema = sequelize.define('school',{
     board:{ type :DataTypes.STRING, allowNull:false}
 })
 
-schoolSchema.sync({alter:true}).then(()=>{
+schoolSchema.sync().then(()=>{
     console.log('Model updated')
 }).catch((err)=>{
     console.log('scene!',err)

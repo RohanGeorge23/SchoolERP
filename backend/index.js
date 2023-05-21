@@ -3,6 +3,8 @@ const cors = require('cors')
 const {testDbConnection} =require('./config/db')
 require('./model/schoolDetail')
 require('./model/studentModel')
+require('./model/classModel')
+require('./model/sectionModel')
 
 const school = require('./routes/school')
 const stu = require('./routes/student')
