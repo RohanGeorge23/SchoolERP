@@ -28,6 +28,8 @@ app.get('/',(req,res)=>{
 app.use('/school',school)
 app.use('/student',stu)
 
+//THIS DONE BY VINITA
+
 
 app.all('*',(req,res)=>{
   res.send('Incorrect Endpoint!')
